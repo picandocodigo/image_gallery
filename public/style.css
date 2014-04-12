@@ -1,0 +1,23 @@
+.gallery-nav{
+}
+.gallery-nav li{
+    display: inline;
+    margin-right: 2em;
+}
+
+.gallery ul{
+    display: inline;
+}
+
+.gallery li {
+    list-style: none;
+    float: left;
+    margin: 5%;
+    text-align: center;
+    display: block;
+    width: 40%;
+}
+
+.gallery img{
+    max-width: 100%;
+}

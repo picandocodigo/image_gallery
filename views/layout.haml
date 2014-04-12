@@ -1,0 +1,16 @@
+!!!
+%html
+  %head
+    %title
+      Images gallery
+    %link{rel: 'stylesheet', type: 'text/css', href: 'style.css'}
+  %body
+    %ul.gallery-nav
+      %li
+        %a{href: "/"}
+          Inicio
+      - galleries.each do |gallery|
+        %li
+          %a{href: gallery}
+            = gallery.capitalize
+    = yield

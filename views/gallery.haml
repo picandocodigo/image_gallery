@@ -1,0 +1,7 @@
+%h1= path
+.gallery
+  %ul
+    - gallery.each do |img|
+      %li
+        %img{src: "#{path}/#{img}"}
+        %p= img.gsub(/\.(jpe?g|bmp|gif|png)/, '').gsub("_", " ")
